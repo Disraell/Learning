@@ -172,4 +172,3 @@ class Person6
     public int age;
 }
 
-//1123
