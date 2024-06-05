@@ -1,4 +1,6 @@
-﻿class Program3
+﻿using System.Net.Http.Headers;
+
+class Program3
 {
     static void Main(string[] args) // программа верхнего уровня
     {
@@ -6,7 +8,7 @@
         tom.SayHello();
 
         
-        Person1 sam = new Person1(); // инициализация структуры как и класса (с конструктором)                 
+        Person1 sam = new Person1(); // инициализация структуры как и класса (с конструктором)
         sam.Print(); // Имя:   Возраст: 0
         sam.name = "Sam";
         sam.Print(); // Имя: Sam  Возраст: 0
@@ -64,7 +66,7 @@
         {
             // сработает
             person.name = "Alice";
-            // сработает только в рамках данного метода потому, что создает новую ссылку в хипе под объект "person", не может выделить новую пасять под "p"
+            // сработает только в рамках данного метода потому, что создает новую ссылку в хипе под объект "person", не может выделить новую память под "p"
             person = new Person6 { name = "Bill", age = 45 };
             Console.WriteLine(person.name); // Bill
         }
@@ -163,7 +165,6 @@ struct State //тип значений (стек)
 class Country // ссылочный тип (хип)
 {
     public int x;
-    public int y;
 }
 
 class Person6
