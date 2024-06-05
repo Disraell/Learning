@@ -15,8 +15,6 @@ class Program4
 
     }
 
-            //lof
-            //дщр
 
 
 }
